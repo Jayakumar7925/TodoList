@@ -1,0 +1,41 @@
+body{
+    background: radial-gradient(circle, grey, black );
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#wow{
+    margin-left: 10px;
+}
+input, button{
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+    color: black;
+    margin-top: 10px;
+    height: 5vh;
+    transition: all 0.7s;
+}
+input{
+    width: auto;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
